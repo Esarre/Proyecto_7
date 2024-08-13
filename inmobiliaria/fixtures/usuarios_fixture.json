@@ -1,0 +1,211 @@
+[
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "rut": "000000000",
+            "primer_nombre": "Admin",
+            "segundo_nombre": "",
+            "apellido_paterno": "Admin",
+            "apellido_materno": "",
+            "fecha_nac": "1970-01-01",
+            "telefono": "00000000",
+            "email": "admin@mail.com",
+            "password": "pbkdf2_sha256$720000$GUJYDE1iPBtrWcoLK48cJ5$U23SCeh5Z8iuRKpKTezyzt1nn+xY1SG+X6BCl4fnQY8=",
+            "tipo_usuario": "administrador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 2,
+        "fields": {
+            "username": "Juanito",
+            "rut": "111111111",
+            "primer_nombre": "Juan",
+            "segundo_nombre": "José",
+            "apellido_paterno": "Soto",
+            "apellido_materno": "Soto",
+            "fecha_nac": "1975-05-05",
+            "telefono": "11111111",
+            "email": "juan@mail.com",
+            "password": "pbkdf2_sha256$720000$rebW53CHvL3fXNVYKl0wKQ$XQ64vpasUOaUmoyE46fepniYknttP+wNMWzWeKpieYk=",
+            "tipo_usuario": "arrendador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 3,
+        "fields": {
+            "username": "Anita",
+            "rut": "222222222",
+            "primer_nombre": "Ana",
+            "segundo_nombre": "Abby",
+            "apellido_paterno": "Pérez",
+            "apellido_materno": "Pérez",
+            "fecha_nac": "1978-11-14",
+            "telefono": "22222222",
+            "email": "ana@mail.com",
+            "password": "pbkdf2_sha256$720000$BfFC7kHkaA8kMqhPGXOfF6$x7RoHI3DqoLM/rCVAJ+mGD4DIOclF77iBENiccRm+Oo=",
+            "tipo_usuario": "arrendador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 4,
+        "fields": {
+            "username": "Neto",
+            "rut": "333333333",
+            "primer_nombre": "Ernesto",
+            "segundo_nombre": "Eduardo",
+            "apellido_paterno": "González",
+            "apellido_materno": "González",
+            "fecha_nac": "1981-10-07",
+            "telefono": "33333333",
+            "email": "ernesto@mail.com",
+            "password": "pbkdf2_sha256$720000$3Nv3wXekOm6fzW70gQcZW1$+iu6I3Evwz71YJFp0ylvNjGMQ/XccDftjcdMjnRVHwA=",
+            "tipo_usuario": "arrendador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 5,
+        "fields": {
+            "username": "Toño",
+            "rut": "444444444",
+            "primer_nombre": "Antonio",
+            "segundo_nombre": "Agustín",
+            "apellido_paterno": "Prieto",
+            "apellido_materno": "Prieto",
+            "fecha_nac": "1971-08-22",
+            "telefono": "44444444",
+            "email": "antonio@mail.com",
+            "password": "pbkdf2_sha256$720000$7QCfpgJPyLM7M5x2u9wzlU$DClXFedikCr+jRVtlDWjt7vE0ZfZniQOcTDSiUBOZP0=",
+            "tipo_usuario": "arrendador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 6,
+        "fields": {
+            "username": "Basty",
+            "rut": "555555555",
+            "primer_nombre": "Bastián",
+            "segundo_nombre": "Bernardo",
+            "apellido_paterno": "Riquelme",
+            "apellido_materno": "Riquelme",
+            "fecha_nac": "1977-02-11",
+            "telefono": "55555555",
+            "email": "bastian@mail.com",
+            "password": "pbkdf2_sha256$720000$LZg5wtrOH592bCaz3fe22t$LyWZ2KMpNjLl5Azmq7oputODrdjuJOcZJ7wJyaHQMys=",
+            "tipo_usuario": "arrendador",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 7,
+        "fields": {
+            "username": "Broio",
+            "rut": "666666666",
+            "primer_nombre": "Braulio",
+            "segundo_nombre": "Sebastián",
+            "apellido_paterno": "Soto",
+            "apellido_materno": "Pérez",
+            "fecha_nac": "1988-01-29",
+            "telefono": "66666666",
+            "email": "braulio@mail.com",
+            "password": "pbkdf2_sha256$720000$JmCNtug7BFD9d3RUzTnTtJ$+B79GE6yRUaznMFEKECMNyn+DGRU3yDxGps2weBog0A=",
+            "tipo_usuario": "arrendatario",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 8,
+        "fields": {
+            "username": "Charlie",
+            "rut": "777777777",
+            "primer_nombre": "Carlos",
+            "segundo_nombre": "José",
+            "apellido_paterno": "Ramm",
+            "apellido_materno": "Inostroza",
+            "fecha_nac": "1983-08-07",
+            "telefono": "77777777",
+            "email": "carlos@mail.com",
+            "password": "pbkdf2_sha256$720000$GNChQoGPmm1bBS9QSwu5kg$G/t0S+fZdIx6AHGYMd0HWuHzR8bb5oiRaps0kcEvuOM=",
+            "tipo_usuario": "arrendatario",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 9,
+        "fields": {
+            "username": "Danny",
+            "rut": "888888888",
+            "primer_nombre": "Daniel",
+            "segundo_nombre": "Damián",
+            "apellido_paterno": "Tapia",
+            "apellido_materno": "Casas",
+            "fecha_nac": "1990-09-13",
+            "telefono": "88888888",
+            "email": "daniel@mail.com",
+            "password": "pbkdf2_sha256$720000$iMkBMR8SHwzOP8JEsYM7gi$dUQopw/P4IC0aB/w0fuIxr9K6KGBB5LGbz52NT90CoQ=",
+            "tipo_usuario": "arrendatario",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 10,
+        "fields": {
+            "username": "Faby",
+            "rut": "999999999",
+            "primer_nombre": "Fabián",
+            "segundo_nombre": "Ricardo",
+            "apellido_paterno": "Lamas",
+            "apellido_materno": "Jerez",
+            "fecha_nac": "1979-12-24",
+            "telefono": "99999999",
+            "email": "fabian@mail.com",
+            "password": "pbkdf2_sha256$720000$E0oqRxQwux2M5Lhvr5tPbu$bZAVkPIGMJnft/gpm1RwmRv86HkFgDcWYG9l97Q/WCk=",
+            "tipo_usuario": "arrendatario",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    },
+    {
+        "model": "inmobiliaria.Usuario",
+        "pk": 11,
+        "fields": {
+            "username": "Guille",
+            "rut": "211111111",
+            "primer_nombre": "Guillermo",
+            "segundo_nombre": "Josué",
+            "apellido_paterno": "Hernández",
+            "apellido_materno": "Keiser",
+            "fecha_nac": "1992-06-21",
+            "telefono": "21111111",
+            "email": "guillermo@mail.com",
+            "password": "pbkdf2_sha256$720000$h7ubZBIu24sOCT1400RhFY$9Z/LlC/5femmRW6SDEEW5tjlJ1ObF5Vami7bKelz7cg=",
+            "tipo_usuario": "arrendatario",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25"
+        }
+    }
+]

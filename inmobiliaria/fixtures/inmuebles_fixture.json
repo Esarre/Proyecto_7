@@ -1,0 +1,92 @@
+[
+    {
+        "model": "inmobiliaria.inmueble",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casa Concón",
+            "descripcion": "Casa amplia y acogedora",
+            "m2_construidos": "200",
+            "m2_totales": "300",
+            "n_habitaciones": 4,
+            "n_banios": 2,
+            "n_estacionamientos": 2,
+            "precio": 1500000,
+            "tipo_inmueble": "casa",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25",
+            "arrendador_usuario": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.inmueble",
+        "pk": 2,
+        "fields": {
+            "nombre": "Casa Viña del Mar",
+            "descripcion": "Casa Viña del Mar, a metros del supermercado Jumbo",
+            "m2_construidos": "150",
+            "m2_totales": "200",
+            "n_habitaciones": 3,
+            "n_banios": 2,
+            "n_estacionamientos": 2,
+            "precio": 17500000,
+            "tipo_inmueble": "casa",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25",
+            "arrendador_usuario": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.inmueble",
+        "pk": 3,
+        "fields": {
+            "nombre": "Casa valparaíso",
+            "descripcion": "Casa ubicada en cerro Placeres, con vista al mar",
+            "m2_construidos": "100",
+            "m2_totales": "130",
+            "n_habitaciones": 3,
+            "n_banios": 2,
+            "n_estacionamientos": 1,
+            "precio": 12500000,
+            "tipo_inmueble": "casa",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25",
+            "arrendador_usuario": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.inmueble",
+        "pk": 4,
+        "fields": {
+            "nombre": "Departamento Quilpué",
+            "descripcion": "Amplio departamento de 2 dormitorios, a metros del Portal Belloto",
+            "m2_construidos": "90",
+            "m2_totales": "90",
+            "n_habitaciones": 2,
+            "n_banios": 2,
+            "n_estacionamientos": 1,
+            "precio": 750000,
+            "tipo_inmueble": "departamento",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25",
+            "arrendador_usuario": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.inmueble",
+        "pk": 5,
+        "fields": {
+            "nombre": "Departamento Viña del Mar",
+            "descripcion": "Departamento de un dormitorio, especial para estudiantes",
+            "m2_construidos": "30",
+            "m2_totales": "30",
+            "n_habitaciones": 1,
+            "n_banios": 1,
+            "n_estacionamientos": 0,
+            "precio": 500000,
+            "tipo_inmueble": "departamento",
+            "fecha_creacion": "2024-07-25",
+            "fecha_modificacion": "2024-07-25",
+            "arrendador_usuario": 6
+        }
+    }
+]

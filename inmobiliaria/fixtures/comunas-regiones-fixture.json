@@ -1,0 +1,2882 @@
+[
+    {
+        "model": "inmobiliaria.region",
+        "pk": 1,
+        "fields": {
+            "region": "Región de Arica y Parinacota"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 1,
+        "fields": {
+            "comuna": "Arica",
+            "region": 1
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 2,
+        "fields": {
+            "comuna": "Camarones",
+            "region": 1
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 3,
+        "fields": {
+            "comuna": "Putre",
+            "region": 1
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 4,
+        "fields": {
+            "comuna": "General Lagos",
+            "region": 1
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 2,
+        "fields": {
+            "region": "Región de Tarapacá"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 5,
+        "fields": {
+            "comuna": "Iquique",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 6,
+        "fields": {
+            "comuna": "Alto Hospicio",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 7,
+        "fields": {
+            "comuna": "Pozo Almonte",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 8,
+        "fields": {
+            "comuna": "Camiña",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 9,
+        "fields": {
+            "comuna": "Colchane",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 10,
+        "fields": {
+            "comuna": "Huara",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 11,
+        "fields": {
+            "comuna": "Pica",
+            "region": 2
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 3,
+        "fields": {
+            "region": "Región de Antofagasta"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 12,
+        "fields": {
+            "comuna": "Antofagasta",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 13,
+        "fields": {
+            "comuna": "Mejillones",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 14,
+        "fields": {
+            "comuna": "Sierra Gorda",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 15,
+        "fields": {
+            "comuna": "Taltal",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 16,
+        "fields": {
+            "comuna": "Calama",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 17,
+        "fields": {
+            "comuna": "Ollagüe",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 18,
+        "fields": {
+            "comuna": "San Pedro de Atacama",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 19,
+        "fields": {
+            "comuna": "Tocopilla",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 20,
+        "fields": {
+            "comuna": "María Elena",
+            "region": 3
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 4,
+        "fields": {
+            "region": "Región de Atacama"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 21,
+        "fields": {
+            "comuna": "Copiapó",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 22,
+        "fields": {
+            "comuna": "Caldera",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 23,
+        "fields": {
+            "comuna": "Tierra Amarilla",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 24,
+        "fields": {
+            "comuna": "Chañaral",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 25,
+        "fields": {
+            "comuna": "Diego de Almagro",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 26,
+        "fields": {
+            "comuna": "Vallenar",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 27,
+        "fields": {
+            "comuna": "Alto del Carmen",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 28,
+        "fields": {
+            "comuna": "Freirina",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 29,
+        "fields": {
+            "comuna": "Huasco",
+            "region": 4
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 5,
+        "fields": {
+            "region": "Región de Coquimbo"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 30,
+        "fields": {
+            "comuna": "La Serena",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 31,
+        "fields": {
+            "comuna": "Coquimbo",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 32,
+        "fields": {
+            "comuna": "Andacollo",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 33,
+        "fields": {
+            "comuna": "La Higuera",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 34,
+        "fields": {
+            "comuna": "Paiguano",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 35,
+        "fields": {
+            "comuna": "Vicuña",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 36,
+        "fields": {
+            "comuna": "Illapel",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 37,
+        "fields": {
+            "comuna": "Canela",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 38,
+        "fields": {
+            "comuna": "Los Vilos",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 39,
+        "fields": {
+            "comuna": "Salamanca",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 40,
+        "fields": {
+            "comuna": "Ovalle",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 41,
+        "fields": {
+            "comuna": "Combarbalá",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 42,
+        "fields": {
+            "comuna": "Monte Patria",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 43,
+        "fields": {
+            "comuna": "Punitaqui",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 44,
+        "fields": {
+            "comuna": "Río Hurtado",
+            "region": 5
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 6,
+        "fields": {
+            "region": "Región de Valparaíso"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 45,
+        "fields": {
+            "comuna": "Valparaíso",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 46,
+        "fields": {
+            "comuna": "Casablanca",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 47,
+        "fields": {
+            "comuna": "Concón",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 48,
+        "fields": {
+            "comuna": "Juan Fernández",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 49,
+        "fields": {
+            "comuna": "Puchuncaví",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 50,
+        "fields": {
+            "comuna": "Quintero",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 51,
+        "fields": {
+            "comuna": "Viña del Mar",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 52,
+        "fields": {
+            "comuna": "Isla de Pascua",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 53,
+        "fields": {
+            "comuna": "Los Andes",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 54,
+        "fields": {
+            "comuna": "Calle Larga",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 55,
+        "fields": {
+            "comuna": "Rinconada",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 56,
+        "fields": {
+            "comuna": "San Esteban",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 57,
+        "fields": {
+            "comuna": "La Ligua",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 58,
+        "fields": {
+            "comuna": "Cabildo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 59,
+        "fields": {
+            "comuna": "Papudo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 60,
+        "fields": {
+            "comuna": "Petorca",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 61,
+        "fields": {
+            "comuna": "Zapallar",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 62,
+        "fields": {
+            "comuna": "Quillota",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 63,
+        "fields": {
+            "comuna": "Calera",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 64,
+        "fields": {
+            "comuna": "Hijuelas",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 65,
+        "fields": {
+            "comuna": "La Cruz",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 66,
+        "fields": {
+            "comuna": "Nogales",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 67,
+        "fields": {
+            "comuna": "San Antonio",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 68,
+        "fields": {
+            "comuna": "Algarrobo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 69,
+        "fields": {
+            "comuna": "Cartagena",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 70,
+        "fields": {
+            "comuna": "El Quisco",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 71,
+        "fields": {
+            "comuna": "El Tabo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 72,
+        "fields": {
+            "comuna": "Santo Domingo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 73,
+        "fields": {
+            "comuna": "San Felipe",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 74,
+        "fields": {
+            "comuna": "Catemu",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 75,
+        "fields": {
+            "comuna": "Llaillay",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 76,
+        "fields": {
+            "comuna": "Panquehue",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 77,
+        "fields": {
+            "comuna": "Putaendo",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 78,
+        "fields": {
+            "comuna": "Santa María",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 79,
+        "fields": {
+            "comuna": "Quilpué",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 80,
+        "fields": {
+            "comuna": "Limache",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 81,
+        "fields": {
+            "comuna": "Olmué",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 82,
+        "fields": {
+            "comuna": "Villa Alemana",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 7,
+        "fields": {
+            "region": "Región del Libertador Gral. Bernardo O’Higgins"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 83,
+        "fields": {
+            "comuna": "Rancagua",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 84,
+        "fields": {
+            "comuna": "Codegua",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 85,
+        "fields": {
+            "comuna": "Coinco",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 86,
+        "fields": {
+            "comuna": "Coltauco",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 87,
+        "fields": {
+            "comuna": "Doñihue",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 88,
+        "fields": {
+            "comuna": "Graneros",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 89,
+        "fields": {
+            "comuna": "Las Cabras",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 90,
+        "fields": {
+            "comuna": "Machalí",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 91,
+        "fields": {
+            "comuna": "Malloa",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 92,
+        "fields": {
+            "comuna": "Mostazal",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 93,
+        "fields": {
+            "comuna": "Olivar",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 94,
+        "fields": {
+            "comuna": "Peumo",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 95,
+        "fields": {
+            "comuna": "Pichidegua",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 96,
+        "fields": {
+            "comuna": "Quinta de Tilcoco",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 97,
+        "fields": {
+            "comuna": "Rengo",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 98,
+        "fields": {
+            "comuna": "Requínoa",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 99,
+        "fields": {
+            "comuna": "San Vicente",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 100,
+        "fields": {
+            "comuna": "Pichilemu",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 101,
+        "fields": {
+            "comuna": "La Estrella",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 102,
+        "fields": {
+            "comuna": "Litueche",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 103,
+        "fields": {
+            "comuna": "Marchihue",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 104,
+        "fields": {
+            "comuna": "Navidad",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 105,
+        "fields": {
+            "comuna": "Paredones",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 106,
+        "fields": {
+            "comuna": "San Fernando",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 107,
+        "fields": {
+            "comuna": "Chépica",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 108,
+        "fields": {
+            "comuna": "Chimbarongo",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 109,
+        "fields": {
+            "comuna": "Lolol",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 110,
+        "fields": {
+            "comuna": "Nancagua",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 111,
+        "fields": {
+            "comuna": "Palmilla",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 112,
+        "fields": {
+            "comuna": "Peralillo",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 113,
+        "fields": {
+            "comuna": "Placilla",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 114,
+        "fields": {
+            "comuna": "Pumanque",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 115,
+        "fields": {
+            "comuna": "Santa Cruz",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 8,
+        "fields": {
+            "region": "Región del Maule"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 116,
+        "fields": {
+            "comuna": "Talca",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 117,
+        "fields": {
+            "comuna": "Constitución",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 118,
+        "fields": {
+            "comuna": "Curepto",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 119,
+        "fields": {
+            "comuna": "Empedrado",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 120,
+        "fields": {
+            "comuna": "Maule",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 121,
+        "fields": {
+            "comuna": "Pelarco",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 122,
+        "fields": {
+            "comuna": "Pencahue",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 123,
+        "fields": {
+            "comuna": "Río Claro",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 124,
+        "fields": {
+            "comuna": "San Clemente",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 125,
+        "fields": {
+            "comuna": "San Rafael",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 126,
+        "fields": {
+            "comuna": "Cauquenes",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 127,
+        "fields": {
+            "comuna": "Chanco",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 128,
+        "fields": {
+            "comuna": "Pelluhue",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 129,
+        "fields": {
+            "comuna": "Curicó",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 130,
+        "fields": {
+            "comuna": "Hualañé",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 131,
+        "fields": {
+            "comuna": "Licantén",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 132,
+        "fields": {
+            "comuna": "Molina",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 133,
+        "fields": {
+            "comuna": "Rauco",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 134,
+        "fields": {
+            "comuna": "Romeral",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 135,
+        "fields": {
+            "comuna": "Sagrada Familia",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 136,
+        "fields": {
+            "comuna": "Teno",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 137,
+        "fields": {
+            "comuna": "Vichuquén",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 138,
+        "fields": {
+            "comuna": "Linares",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 139,
+        "fields": {
+            "comuna": "Colbún",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 140,
+        "fields": {
+            "comuna": "Longaví",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 141,
+        "fields": {
+            "comuna": "Parral",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 142,
+        "fields": {
+            "comuna": "Retiro",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 143,
+        "fields": {
+            "comuna": "San Javier",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 144,
+        "fields": {
+            "comuna": "Villa Alegre",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 145,
+        "fields": {
+            "comuna": "Yerbas Buenas",
+            "region": 8
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 9,
+        "fields": {
+            "region": "Región de Ñuble"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 146,
+        "fields": {
+            "comuna": "Cobquecura",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 147,
+        "fields": {
+            "comuna": "Coelemu",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 148,
+        "fields": {
+            "comuna": "Ninhue",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 149,
+        "fields": {
+            "comuna": "Portezuelo",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 150,
+        "fields": {
+            "comuna": "Quirihue",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 151,
+        "fields": {
+            "comuna": "Ránquil",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 152,
+        "fields": {
+            "comuna": "Treguaco",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 153,
+        "fields": {
+            "comuna": "Bulnes",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 154,
+        "fields": {
+            "comuna": "Chillán Viejo",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 155,
+        "fields": {
+            "comuna": "Chillán",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 156,
+        "fields": {
+            "comuna": "El Carmen",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 157,
+        "fields": {
+            "comuna": "Pemuco",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 158,
+        "fields": {
+            "comuna": "Pinto",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 159,
+        "fields": {
+            "comuna": "Quillón",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 160,
+        "fields": {
+            "comuna": "San Ignacio",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 161,
+        "fields": {
+            "comuna": "Yungay",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 162,
+        "fields": {
+            "comuna": "Coihueco",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 163,
+        "fields": {
+            "comuna": "Ñiquén",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 164,
+        "fields": {
+            "comuna": "San Carlos",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 165,
+        "fields": {
+            "comuna": "San Fabián",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 166,
+        "fields": {
+            "comuna": "San Nicolás",
+            "region": 9
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 10,
+        "fields": {
+            "region": "Región del Biobío"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 167,
+        "fields": {
+            "comuna": "Concepción",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 168,
+        "fields": {
+            "comuna": "Coronel",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 169,
+        "fields": {
+            "comuna": "Chiguayante",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 170,
+        "fields": {
+            "comuna": "Florida",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 171,
+        "fields": {
+            "comuna": "Hualqui",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 172,
+        "fields": {
+            "comuna": "Lota",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 173,
+        "fields": {
+            "comuna": "Penco",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 174,
+        "fields": {
+            "comuna": "San Pedro de la Paz",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 175,
+        "fields": {
+            "comuna": "Santa Juana",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 176,
+        "fields": {
+            "comuna": "Talcahuano",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 177,
+        "fields": {
+            "comuna": "Tomé",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 178,
+        "fields": {
+            "comuna": "Hualpén",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 179,
+        "fields": {
+            "comuna": "Lebu",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 180,
+        "fields": {
+            "comuna": "Arauco",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 181,
+        "fields": {
+            "comuna": "Cañete",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 182,
+        "fields": {
+            "comuna": "Contulmo",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 183,
+        "fields": {
+            "comuna": "Curanilahue",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 184,
+        "fields": {
+            "comuna": "Los Álamos",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 185,
+        "fields": {
+            "comuna": "Tirúa",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 186,
+        "fields": {
+            "comuna": "Los Ángeles",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 187,
+        "fields": {
+            "comuna": "Antuco",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 188,
+        "fields": {
+            "comuna": "Cabrero",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 189,
+        "fields": {
+            "comuna": "Laja",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 190,
+        "fields": {
+            "comuna": "Mulchén",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 191,
+        "fields": {
+            "comuna": "Nacimiento",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 192,
+        "fields": {
+            "comuna": "Negrete",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 193,
+        "fields": {
+            "comuna": "Quilaco",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 194,
+        "fields": {
+            "comuna": "Quilleco",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 195,
+        "fields": {
+            "comuna": "San Rosendo",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 196,
+        "fields": {
+            "comuna": "Santa Bárbara",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 197,
+        "fields": {
+            "comuna": "Tucapel",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 198,
+        "fields": {
+            "comuna": "Yumbel",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 199,
+        "fields": {
+            "comuna": "Alto Biobío",
+            "region": 10
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 11,
+        "fields": {
+            "region": "Región de la Araucanía"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 200,
+        "fields": {
+            "comuna": "Temuco",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 201,
+        "fields": {
+            "comuna": "Carahue",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 202,
+        "fields": {
+            "comuna": "Cunco",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 203,
+        "fields": {
+            "comuna": "Curarrehue",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 204,
+        "fields": {
+            "comuna": "Freire",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 205,
+        "fields": {
+            "comuna": "Galvarino",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 206,
+        "fields": {
+            "comuna": "Gorbea",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 207,
+        "fields": {
+            "comuna": "Lautaro",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 208,
+        "fields": {
+            "comuna": "Loncoche",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 209,
+        "fields": {
+            "comuna": "Melipeuco",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 210,
+        "fields": {
+            "comuna": "Nueva Imperial",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 211,
+        "fields": {
+            "comuna": "Padre las Casas",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 212,
+        "fields": {
+            "comuna": "Perquenco",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 213,
+        "fields": {
+            "comuna": "Pitrufquén",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 214,
+        "fields": {
+            "comuna": "Pucón",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 215,
+        "fields": {
+            "comuna": "Saavedra",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 216,
+        "fields": {
+            "comuna": "Teodoro Schmidt",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 217,
+        "fields": {
+            "comuna": "Toltén",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 218,
+        "fields": {
+            "comuna": "Vilcún",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 219,
+        "fields": {
+            "comuna": "Villarrica",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 220,
+        "fields": {
+            "comuna": "Cholchol",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 221,
+        "fields": {
+            "comuna": "Angol",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 222,
+        "fields": {
+            "comuna": "Collipulli",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 223,
+        "fields": {
+            "comuna": "Curacautín",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 224,
+        "fields": {
+            "comuna": "Ercilla",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 225,
+        "fields": {
+            "comuna": "Lonquimay",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 226,
+        "fields": {
+            "comuna": "Los Sauces",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 227,
+        "fields": {
+            "comuna": "Lumaco",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 228,
+        "fields": {
+            "comuna": "Purén",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 229,
+        "fields": {
+            "comuna": "Renaico",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 230,
+        "fields": {
+            "comuna": "Traiguén",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 231,
+        "fields": {
+            "comuna": "Victoria",
+            "region": 11
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 12,
+        "fields": {
+            "region": "Región de Los Ríos"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 232,
+        "fields": {
+            "comuna": "Valdivia",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 233,
+        "fields": {
+            "comuna": "Corral",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 234,
+        "fields": {
+            "comuna": "Lanco",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 235,
+        "fields": {
+            "comuna": "Los Lagos",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 236,
+        "fields": {
+            "comuna": "Máfil",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 237,
+        "fields": {
+            "comuna": "Mariquina",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 238,
+        "fields": {
+            "comuna": "Paillaco",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 239,
+        "fields": {
+            "comuna": "Panguipulli",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 240,
+        "fields": {
+            "comuna": "La Unión",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 241,
+        "fields": {
+            "comuna": "Futrono",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 242,
+        "fields": {
+            "comuna": "Lago Ranco",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 243,
+        "fields": {
+            "comuna": "Río Bueno",
+            "region": 12
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 13,
+        "fields": {
+            "region": "Región de Los Lagos"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 244,
+        "fields": {
+            "comuna": "Puerto Montt",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 245,
+        "fields": {
+            "comuna": "Calbuco",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 246,
+        "fields": {
+            "comuna": "Cochamó",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 247,
+        "fields": {
+            "comuna": "Fresia",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 248,
+        "fields": {
+            "comuna": "Frutillar",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 249,
+        "fields": {
+            "comuna": "Los Muermos",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 250,
+        "fields": {
+            "comuna": "Llanquihue",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 251,
+        "fields": {
+            "comuna": "Maullín",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 252,
+        "fields": {
+            "comuna": "Puerto Varas",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 253,
+        "fields": {
+            "comuna": "Castro",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 254,
+        "fields": {
+            "comuna": "Ancud",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 255,
+        "fields": {
+            "comuna": "Chonchi",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 256,
+        "fields": {
+            "comuna": "Curaco de Vélez",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 257,
+        "fields": {
+            "comuna": "Dalcahue",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 258,
+        "fields": {
+            "comuna": "Puqueldón",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 259,
+        "fields": {
+            "comuna": "Queilén",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 260,
+        "fields": {
+            "comuna": "Quellón",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 261,
+        "fields": {
+            "comuna": "Quemchi",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 262,
+        "fields": {
+            "comuna": "Quinchao",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 263,
+        "fields": {
+            "comuna": "Osorno",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 264,
+        "fields": {
+            "comuna": "Puerto Octay",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 265,
+        "fields": {
+            "comuna": "Purranque",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 266,
+        "fields": {
+            "comuna": "Puyehue",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 267,
+        "fields": {
+            "comuna": "Río Negro",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 268,
+        "fields": {
+            "comuna": "San Juan de la Costa",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 269,
+        "fields": {
+            "comuna": "San Pablo",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 270,
+        "fields": {
+            "comuna": "Chaitén",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 271,
+        "fields": {
+            "comuna": "Futaleufú",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 272,
+        "fields": {
+            "comuna": "Hualaihué",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 273,
+        "fields": {
+            "comuna": "Palena",
+            "region": 13
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 14,
+        "fields": {
+            "region": "Región Aisén del Gral. Carlos Ibáñez del Campo"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 274,
+        "fields": {
+            "comuna": "Coihaique",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 275,
+        "fields": {
+            "comuna": "Lago Verde",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 276,
+        "fields": {
+            "comuna": "Aisén",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 277,
+        "fields": {
+            "comuna": "Cisnes",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 278,
+        "fields": {
+            "comuna": "Guaitecas",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 279,
+        "fields": {
+            "comuna": "Cochrane",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 280,
+        "fields": {
+            "comuna": "O’Higgins",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 281,
+        "fields": {
+            "comuna": "Tortel",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 282,
+        "fields": {
+            "comuna": "Chile Chico",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 283,
+        "fields": {
+            "comuna": "Río Ibáñez",
+            "region": 14
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 15,
+        "fields": {
+            "region": "Región de Magallanes y de la Antártica Chilena"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 284,
+        "fields": {
+            "comuna": "Punta Arenas",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 285,
+        "fields": {
+            "comuna": "Laguna Blanca",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 286,
+        "fields": {
+            "comuna": "Río Verde",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 287,
+        "fields": {
+            "comuna": "San Gregorio",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 288,
+        "fields": {
+            "comuna": "Cabo de Hornos (Ex Navarino)",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 289,
+        "fields": {
+            "comuna": "Antártica",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 290,
+        "fields": {
+            "comuna": "Porvenir",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 291,
+        "fields": {
+            "comuna": "Primavera",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 292,
+        "fields": {
+            "comuna": "Timaukel",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 293,
+        "fields": {
+            "comuna": "Natales",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 294,
+        "fields": {
+            "comuna": "Torres del Paine",
+            "region": 15
+        }
+    },
+    {
+        "model": "inmobiliaria.region",
+        "pk": 16,
+        "fields": {
+            "region": "Región Metropolitana de Santiago"
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 295,
+        "fields": {
+            "comuna": "Cerrillos",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 296,
+        "fields": {
+            "comuna": "Cerro Navia",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 297,
+        "fields": {
+            "comuna": "Conchalí",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 298,
+        "fields": {
+            "comuna": "El Bosque",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 299,
+        "fields": {
+            "comuna": "Estación Central",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 300,
+        "fields": {
+            "comuna": "Huechuraba",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 301,
+        "fields": {
+            "comuna": "Independencia",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 302,
+        "fields": {
+            "comuna": "La Cisterna",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 303,
+        "fields": {
+            "comuna": "La Florida",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 304,
+        "fields": {
+            "comuna": "La Granja",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 305,
+        "fields": {
+            "comuna": "La Pintana",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 306,
+        "fields": {
+            "comuna": "La Reina",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 307,
+        "fields": {
+            "comuna": "Las Condes",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 308,
+        "fields": {
+            "comuna": "Lo Barnechea",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 309,
+        "fields": {
+            "comuna": "Lo Espejo",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 310,
+        "fields": {
+            "comuna": "Lo Prado",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 311,
+        "fields": {
+            "comuna": "Macul",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 312,
+        "fields": {
+            "comuna": "Maipú",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 313,
+        "fields": {
+            "comuna": "Ñuñoa",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 314,
+        "fields": {
+            "comuna": "Pedro Aguirre Cerda",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 315,
+        "fields": {
+            "comuna": "Peñalolén",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 316,
+        "fields": {
+            "comuna": "Providencia",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 317,
+        "fields": {
+            "comuna": "Pudahuel",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 318,
+        "fields": {
+            "comuna": "Quilicura",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 319,
+        "fields": {
+            "comuna": "Quinta Normal",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 320,
+        "fields": {
+            "comuna": "Recoleta",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 321,
+        "fields": {
+            "comuna": "Renca",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 322,
+        "fields": {
+            "comuna": "Santiago",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 323,
+        "fields": {
+            "comuna": "San Joaquín",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 324,
+        "fields": {
+            "comuna": "San Miguel",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 325,
+        "fields": {
+            "comuna": "San Ramón",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 326,
+        "fields": {
+            "comuna": "Vitacura",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 327,
+        "fields": {
+            "comuna": "Puente Alto",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 328,
+        "fields": {
+            "comuna": "Pirque",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 329,
+        "fields": {
+            "comuna": "San José de Maipo",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 330,
+        "fields": {
+            "comuna": "Colina",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 331,
+        "fields": {
+            "comuna": "Lampa",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 332,
+        "fields": {
+            "comuna": "Tiltil",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 333,
+        "fields": {
+            "comuna": "San Bernardo",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 334,
+        "fields": {
+            "comuna": "Buin",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 335,
+        "fields": {
+            "comuna": "Calera de Tango",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 336,
+        "fields": {
+            "comuna": "Paine",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 337,
+        "fields": {
+            "comuna": "Melipilla",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 338,
+        "fields": {
+            "comuna": "Alhué",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 339,
+        "fields": {
+            "comuna": "Curacaví",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 340,
+        "fields": {
+            "comuna": "María Pinto",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 341,
+        "fields": {
+            "comuna": "San Pedro",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 342,
+        "fields": {
+            "comuna": "Talagante",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 343,
+        "fields": {
+            "comuna": "El Monte",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 344,
+        "fields": {
+            "comuna": "Isla de Maipo",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 345,
+        "fields": {
+            "comuna": "Padre Hurtado",
+            "region": 16
+        }
+    },
+    {
+        "model": "inmobiliaria.comuna",
+        "pk": 346,
+        "fields": {
+            "comuna": "Peñaflor",
+            "region": 16
+        }
+    }
+]

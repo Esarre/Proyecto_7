@@ -1,0 +1,60 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+<div class="container my-5 divadj pb-5 col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="py-5 text-center">Gestión de solicitudes</h1>
+
+    {% if solicitudes %}
+        <div class="row justify-content-center">
+            {% for solicitud in solicitudes %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicitud ID: {{ solicitud.id }}</h5>
+                            <p class="card-text"><strong>Inmueble:</strong> {{ solicitud.inmueble.nombre }}</p>
+                            <p class="card-text"><strong>Fecha de Solicitud:</strong> {{ solicitud.fecha_solicitud }}</p>
+                            <p class="card-text"><strong>Arrendador:</strong> {{ solicitud.inmueble.arrendador_usuario.primer_nombre }} {{ solicitud.inmueble.arrendador_usuario.apellido_paterno }}</p>
+                            <p class="card-text"><strong>Teléfono Arrendador:</strong> {{ solicitud.inmueble.arrendador_usuario.telefono }}</p>
+                            <p class="card-text"><strong>Correo Arrendador:</strong> {{ solicitud.inmueble.arrendador_usuario.email }}</p>
+                            <p class="card-text"><strong>Estado:</strong> {{ solicitud.estado }}</p>
+                            <!-- El botón activará el modal, y realizará la acción de cancelar cuando el usuario clické en el botón de confirmar -->
+                            <button type="button" class="btn botonadjborrar" data-bs-toggle="modal" data-bs-target="#cancelModal-{{ solicitud.id }}">
+                                Cancelar Solicitud
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="cancelModal-{{ solicitud.id }}" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="cancelModalLabel">Confirmar Cancelación</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ¿Estás seguro de que deseas cancelar esta solicitud? Esta acción no se puede deshacer.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form method="post" action="{% url 'cancel_request' solicitud.id %}">
+                                                {% csrf_token %}
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit" class="btn btn-danger">Confirmar Cancelación</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No has realizado ninguna solicitud de arriendo.</p>
+    {% endif %}
+
+    <a href="{% url 'index' %}" class="btn botonadj">Volver a los inmuebles</a>
+</div>
+
+{% endblock %}
+

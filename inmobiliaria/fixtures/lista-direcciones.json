@@ -1,0 +1,44 @@
+{
+    "direcciones": [
+        {
+            "calle": "Concón 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "inmueble": 1,
+            "region": 6,
+            "comuna": 47
+        },
+        {
+            "calle": "Viña del mar 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "inmueble": 2,
+            "region": 6,
+            "comuna": 51
+        },
+        {
+            "calle": "valparaíso 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "inmueble": 3,
+            "region": 6,
+            "comuna": 45
+        },
+        {
+            "calle": "Quilpué 1",
+            "numero": "123",
+            "numero_departamento": "101A",
+            "inmueble": 4,
+            "region": 6,
+            "comuna": 79
+        },
+        {
+            "calle": "Viña del mar 2",
+            "numero": "456",
+            "numero_departamento": "201A",
+            "inmueble": 5,
+            "region": 6,
+            "comuna": 51
+        }
+    ]
+}

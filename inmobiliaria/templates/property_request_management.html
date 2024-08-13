@@ -1,0 +1,125 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+<div class="container my-5 divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="py-5 text-center">Gestión de solicitudes</h1>
+    <div class="mb-5">
+        <h2>Solicitudes activas</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for solicitud in solicitudes_activas %}
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inmueble: {{ solicitud.inmueble.nombre }}</h5>
+                            <p class="card-text">
+                                <strong>Usuario solicitante:</strong> {{ solicitud.usuario.primer_nombre }} {{ solicitud.usuario.apellido_paterno }}<br>
+                                <strong>Teléfono contacto:</strong> {{ solicitud.usuario.telefono }}<br>
+                                <strong>Correo electrónico:</strong> {{ solicitud.usuario.email }}<br>
+                                <strong>Fecha de Solicitud:</strong> {{ solicitud.fecha_solicitud }}<br>
+                                <strong>Estado:</strong> {{ solicitud.estado }}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <form method="post" action="{% url 'change_request_status' solicitud.id %}">
+                                {% csrf_token %}
+                                <button type="submit" name="estado" value="aceptada" class="btn btn-success">Aceptar</button>
+                                <button type="submit" name="estado" value="rechazada" class="btn btn-danger">Rechazar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12">
+                    <p>No hay solicitudes de arriendo para gestionar.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <h2>Solicitudes Aceptadas</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            {% for solicitud in solicitudes_aceptadas %}
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inmueble: {{ solicitud.inmueble.nombre }}</h5>
+                            <p class="card-text">
+                                <strong>Usuario arrendatario:</strong> {{ solicitud.usuario.primer_nombre }} {{ solicitud.usuario.apellido_paterno }}<br>
+                                <strong>Fecha de Solicitud:</strong> {{ solicitud.fecha_solicitud }}<br>
+                                <strong>Estado:</strong> {{ solicitud.estado }}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmModal" data-action="{% url 'end_rental' solicitud.id %}">Terminar Relación</button>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="col-12">
+                    <p>No hay solicitudes aceptadas.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Confirmar Acción</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas terminar la relación con el arrendatario y hacer que el inmueble esté disponible para otros usuarios?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form id="confirmForm" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de confirmación -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Confirmar Acción</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas terminar la relación con el arrendatario y hacer que el inmueble esté disponible para otros usuarios?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form id="confirmForm" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+// Configura el modal cuando se muestra
+var confirmModal = document.getElementById('confirmModal');
+confirmModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var form = document.getElementById('confirmForm');
+    var action = button.getAttribute('data-action');
+    form.action = action;
+});
+</script>    
+    
+
+{% endblock %}

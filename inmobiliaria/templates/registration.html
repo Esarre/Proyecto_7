@@ -1,0 +1,163 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+    
+    <div class="container text-center my-5 divadj col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10">
+        <h1 class="letratitulo pt-5">Formulario de registro</h1>
+        <p class="m-5">Regístrate para poder solicitar un arriendo o si tienes un inmueble y deseas ofrecerlo en arriendo</p>
+        <div class="form-container">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+
+                <!-- Username -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.username.id_for_label }}" class="form-label">{{ form.username.label_tag }}</label>
+                    <div>
+                        {{ form.username }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.username.errors }}
+                    </div>
+                </div>
+
+                <!-- Rut -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.rut.id_for_label }}" class="form-label">{{ form.rut.label_tag }}</label>
+                    <div>
+                        {{ form.rut }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.rut.errors }}
+                    </div>
+                </div>
+
+                <!-- Primer nombre -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.primer_nombre.id_for_label }}" class="form-label">{{ form.primer_nombre.label_tag }}</label>
+                    <div>
+                        {{ form.primer_nombre }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.primer_nombre.errors }}
+                    </div>
+                </div>
+
+                <!-- Segundo nombre -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.segundo_nombre.id_for_label }}" class="form-label">{{ form.segundo_nombre.label_tag }}</label>
+                    <div>
+                        {{ form.segundo_nombre }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.segundo_nombre.errors }}
+                    </div>
+                </div>
+
+                <!-- Primer apellido -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.apellido_paterno.id_for_label }}" class="form-label">{{ form.apellido_paterno.label_tag }}</label>
+                    <div>
+                        {{ form.apellido_paterno }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.apellido_paterno.errors }}
+                    </div>
+                </div>
+
+                <!-- Segundo apellido -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.apellido_materno.id_for_label }}" class="form-label">{{ form.apellido_materno.label_tag }}</label>
+                    <div>
+                        {{ form.apellido_materno }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.apellido_materno.errors }}
+                    </div>
+                </div>
+
+                <!-- Fecha nacimiento -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.fecha_nac.id_for_label }}" class="form-label">{{ form.fecha_nac.label_tag }}</label>
+                    <div>
+                        {{ form.fecha_nac }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.fecha_nac.errors }}
+                    </div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.telefono.id_for_label }}" class="form-label">{{ form.telefono.label_tag }}</label>
+                    <div>
+                        {{ form.telefono }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.telefono.errors }}
+                    </div>
+                </div>
+
+                <!-- Correo electrónico -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.email.id_for_label }}" class="form-label">{{ form.email.label_tag }}</label>
+                    <div>
+                        {{ form.email }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.email.errors }}
+                    </div>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.password1.id_for_label }}" class="form-label">{{ form.password1.label_tag }}</label>
+                    <div>
+                        {{ form.password1 }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.password1.errors }}
+                    </div>
+                </div>
+
+                <!-- Confirmación de contraseña -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.password2.id_for_label }}" class="form-label">{{ form.password2.label_tag }}</label>
+                    <div>
+                        {{ form.password2 }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.password2.errors }}
+                    </div>
+                </div>
+
+                <!-- Selección tipo de usuario -->
+                <div class="mb-3 text-center">
+                    <label for="{{ form.tipo_usuario.id_for_label }}" class="form-label">{{ form.tipo_usuario.label_tag }}</label>
+                    <div>
+                        {{ form.tipo_usuario }}   
+                    </div>
+                    <div class="text-danger">
+                        {{ form.tipo_usuario.errors }}
+                    </div>
+                </div>
+                <div class="text-center my-3 pb-3">
+                    <button type="submit" class="btn botonadj">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+            // Inicializar DatePicker para el campo fecha_nac
+            $(document).ready(function() {
+                $('#id_fecha_nac').datepicker({
+                    dateFormat: 'yy-mm-dd',  // Formato de fecha
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '-100:+0',  // Rango de años permitido
+                });
+            });
+        </script>
+    </div>
+        
+{% endblock %}

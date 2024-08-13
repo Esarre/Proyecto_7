@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+<div class="container text-center my-5 divcuenta col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="text-center">
+        <h1 class="text-center mx-auto letratitulo pt-5">Sobre nosotros</h1>
+        <img src="{% static 'assets/img/logo_adj.png' %}" alt="Logo" class="mx-auto wlogoadj my-5" style="width: 60%; border-radius: 20px;">
+        <p class="p-4 mx-auto mt-4" style="font-size: 1.2rem; text-align: center; text-justify: inter-word;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cum, est sapiente vitae qui iure itaque neque culpa voluptatem aut reprehenderit? Aspernatur voluptatum nihil culpa quos quam harum nam deleniti!Lorem
+        </p>
+    </div>
+    <div class="text-center">
+        <h5>¿Tienes alguna duda?</h5>
+        <p>No dudes en contactarte con nosotros clickeando aquí</p>
+    </div>
+    <a class="btn botonadj mb-3" href="{% url 'contact' %}" role="button">Ir a contacto</a>
+</div>
+
+{% endblock %}

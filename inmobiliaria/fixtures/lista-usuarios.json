@@ -1,0 +1,124 @@
+{
+    "usuarios": [
+        {
+            "username": "Juanito",
+            "rut": "111111111",
+            "primer_nombre": "Juan",
+            "segundo_nombre": "José",
+            "apellido_paterno": "Soto",
+            "apellido_materno": "Soto",
+            "fecha_nac": "1975-05-05",
+            "telefono": "11111111",
+            "email": "juan@mail.com",
+            "tipo_usuario": "arrendador"
+        },
+        {
+            "username": "Anita",
+            "rut": "222222222",
+            "primer_nombre": "Ana",
+            "segundo_nombre": "Abby",
+            "apellido_paterno": "Pérez",
+            "apellido_materno": "Pérez",
+            "fecha_nac": "1978-11-14",
+            "telefono": "22222222",
+            "email": "ana@mail.com",
+            "tipo_usuario": "arrendador"
+        },
+        {
+            "username": "Neto",
+            "rut": "333333333",
+            "primer_nombre": "Ernesto",
+            "segundo_nombre": "Eduardo",
+            "apellido_paterno": "González",
+            "apellido_materno": "González",
+            "fecha_nac": "1981-10-07",
+            "telefono": "33333333",
+            "email": "ernesto@mail.com",
+            "tipo_usuario": "arrendador"
+        },
+        {
+            "username": "Toño",
+            "rut": "444444444",
+            "primer_nombre": "Antonio",
+            "segundo_nombre": "Agustín",
+            "apellido_paterno": "Prieto",
+            "apellido_materno": "Prieto",
+            "fecha_nac": "1971-08-22",
+            "telefono": "44444444",
+            "email": "antonio@mail.com",
+            "tipo_usuario": "arrendador"
+        },
+        {
+            "username": "Basty",
+            "rut": "555555555",
+            "primer_nombre": "Bastián",
+            "segundo_nombre": "Bernardo",
+            "apellido_paterno": "Riquelme",
+            "apellido_materno": "Riquelme",
+            "fecha_nac": "1977-02-11",
+            "telefono": "55555555",
+            "email": "bastian@mail.com",
+            "tipo_usuario": "arrendador"
+        },
+        {
+            "username": "Broio",
+            "rut": "666666666",
+            "primer_nombre": "Braulio",
+            "segundo_nombre": "Sebastián",
+            "apellido_paterno": "Soto",
+            "apellido_materno": "Pérez",
+            "fecha_nac": "1988-01-29",
+            "telefono": "66666666",
+            "email": "braulio@mail.com",
+            "tipo_usuario": "arrendatario"
+        },
+        {
+            "username": "Charlie",
+            "rut": "777777777",
+            "primer_nombre": "Carlos",
+            "segundo_nombre": "José",
+            "apellido_paterno": "Ramm",
+            "apellido_materno": "Inostroza",
+            "fecha_nac": "1983-08-07",
+            "telefono": "77777777",
+            "email": "carlos@mail.com",
+            "tipo_usuario": "arrendatario"
+        },
+        {
+            "username": "Danny",
+            "rut": "888888888",
+            "primer_nombre": "Daniel",
+            "segundo_nombre": "Damián",
+            "apellido_paterno": "Tapia",
+            "apellido_materno": "Casas",
+            "fecha_nac": "1990-09-13",
+            "telefono": "88888888",
+            "email": "daniel@mail.com",
+            "tipo_usuario": "arrendatario"
+        },
+        {
+            "username": "Faby",
+            "rut": "999999999",
+            "primer_nombre": "Fabián",
+            "segundo_nombre": "Ricardo",
+            "apellido_paterno": "Lamas",
+            "apellido_materno": "Jerez",
+            "fecha_nac": "1979-12-24",
+            "telefono": "99999999",
+            "email": "fabian@mail.com",
+            "tipo_usuario": "arrendatario"
+        },
+        {
+            "username": "Guille",
+            "rut": "211111111",
+            "primer_nombre": "Guillermo",
+            "segundo_nombre": "Josué",
+            "apellido_paterno": "Hernández",
+            "apellido_materno": "Keiser",
+            "fecha_nac": "1992-06-21",
+            "telefono": "21111111",
+            "email": "guillermo@mail.com",
+            "tipo_usuario": "arrendatario"
+        }
+    ]
+}

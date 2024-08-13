@@ -1,0 +1,239 @@
+/* static/assets/css/style.css */
+
+/* Ajustes generales para el body */
+body {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #e9bd6d; /* Color de fondo de reserva */
+    background-image: url("../img/santiago.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+
+/* Ajustes para las letras del título */
+.letratitulo {
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra que da efecto de relieve */
+}
+
+
+
+/* Ajustes para divs */
+.divadj {
+    background-color: #442f078f; /*gba(63, 66, 0, 0.5) Blanco con 50% de opacidad */
+    border-radius: 20px;  /* Redondea los bordes */
+}
+
+
+
+/* Ajuste específico para Mi Cuenta */
+.divcuenta {
+    background-color: #442f078f; /* Blanco con 50% de opacidad */
+    border-radius: 20px;  /* Redondea los bordes */
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra que da efecto de relieve */
+}
+
+
+
+/* Ajustes para los botones */
+.botonadj {
+    background-color: #1324d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botonadjactualizar {
+    background-color: #d1d413;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botonadjborrar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Al pasar el cursor sobre el botón, cambiará a cclor verde */
+.botonadj:hover {
+    background-color: #28a745; /* Color de fondo cuando se pasa el cursor (verde) */
+}
+
+.botonadjactualizar:hover {
+    background-color: #28a745; /* Color de fondo cuando se pasa el cursor (verde) */
+}
+
+.botonadjborrar:hover {
+    background-color: #720202; /* Color de fondo cuando se pasa el cursor (verde) */
+}
+
+
+
+/* Ajustes para el buscador del index*/
+select.form-control {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+select.form-control option {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+/* navbar */
+/*nav{
+    border: 1px solid black;
+}*/
+
+.navbg{
+    background-color: #e69a0e73;
+}
+
+.wlogoadj{
+    width: 100pt;
+    display: block;
+}
+
+#spancolor{
+    border: 1px solid #ffffff;
+    margin-left: auto;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.nfcadj a{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+
+/* Asegúrate de que el logo no se oculte cuando el navbar esté colapsado */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: relative;
+    }
+
+    .navbar-collapse .navbar-nav {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Ajustes del modal */
+.modal-content {
+    color: #000000; /* Texto de los modales de color negro */
+}
+
+
+
+/* Estilos personalizados para las imágenes */
+.card-img-fixed {
+    width: 100%;
+    height: 250px; /* Ajusta la altura */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+
+
+/* Ajustes de formularios */
+/* Asegúrate de que el contenedor del formulario tenga un ancho definido y esté centrado */
+.form-container {
+    max-width: 300px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 15px; /* Agrega un poco de espacio interno */
+}
+
+/* Estilo para los campos del formulario para que ocupen el ancho completo del contenedor */
+.form-control {
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Opcional: Agregar margen automático a los campos del formulario si necesitas centrar en el contenedor de columna */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del div */
+}
+
+/* Ajustes de imágenes en property_details */
+
+.image-size {
+    width: 250px; /* Ajusta el ancho a 100% del contenedor */
+    height: 250px; /* Ajusta la altura fija a 200px */
+    object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsión */
+    border-radius: 8px; /* Opcional: añade bordes redondeados a las imágenes */
+}
+
+
+
+/* Ajustes para mensajes de django (messages.) */
+.alert-success {
+    background-color: #139732 !important;
+    color: #ffffff !important;
+}
+
+.alert-danger {
+    background-color: #6e040d !important;
+    color: #ffffff !important;
+}
+
+.alert-info {
+    background-color: #0d3a9b !important;
+    color: #ffffff !important;
+}
+
+.alert-warning {
+    background-color: #8d8f0f !important;
+    color: #ffffff !important;
+}
+
+.alert-secondary {
+    background-color: #8d6e35 !important;
+    color: #ffffff !important;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #e69a0e73;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+

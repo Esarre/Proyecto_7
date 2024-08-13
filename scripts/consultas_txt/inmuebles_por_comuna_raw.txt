@@ -1,0 +1,23 @@
+Comuna: Concón
+Nombre: Casa Concón
+Descripción: Casa amplia y acogedora
+----------------------------------------
+========================================
+Comuna: Viña del Mar
+Nombre: Casa Viña del Mar
+Descripción: Casa Viña del Mar, a metros del supermercado Jumbo
+----------------------------------------
+Nombre: Departamento Viña del Mar
+Descripción: Departamento de un dormitorio, especial para estudiantes
+----------------------------------------
+========================================
+Comuna: Valparaíso
+Nombre: Casa Valparaíso
+Descripción: Casa ubicada en cerro Placeres, con vista al mar
+----------------------------------------
+========================================
+Comuna: Quilpué
+Nombre: Departamento Quilpué
+Descripción: Amplio departamento de 2 dormitorios, a metros del Portal Belloto
+----------------------------------------
+========================================

@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+<div class="container my-5 divcuenta pb-5 col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="p-5 text-center">{{ inmueble.nombre }}</h1>
+    <ul>
+        <li>Descripción: {{ inmueble.descripcion }}</li>
+        <li>Tipo de inmueble: {{ inmueble.tipo_inmueble }}</li>
+        <li>Metros cuadrados contruídos: {{ inmueble.m2_construidos }}</li>
+        <li>Metros cuadrados totales: {{ inmueble.m2_totales }}</li>
+        <li>Número de habitaciones: {{ inmueble.n_habitaciones }}</li>
+        <li>Número de baños: {{ inmueble.n_banios }}</li>
+        <li>Número de estacionamientos: {{ inmueble.n_estacionamientos }}</li>
+        <li>Precio: {{ inmueble.precio }}</li>
+        <li>Ubicación: {{ inmueble.direccion }}</li>
+    </ul>
+    
+    {% if inmueble.imagenes.exists %}
+        <h3>Imágenes del inmueble:</h3>
+        <div class="row">
+            {% for imagen in inmueble.imagenes.all %}
+                <div class="col-md-4 mb-4">
+                    <img src="{{ imagen.imagen.url }}" class="img-fluid image-size" alt="Imagen del inmueble">
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <!-- Otras propiedades del inmueble -->
+    <!-- Botón para realizar la solicitud de arriendo -->
+    <form action="{% url 'send_request' inmueble.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn botonadj">Enviar Solicitud de Arriendo</button>
+    </form>
+</div>
+{% endblock %}

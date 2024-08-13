@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+{% load static %}
+
+<div class="my-5 container divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="text-center py-5 letratitulo">Formulario de contacto</h1>
+    <p class="text-center">Solicita más información sobre nuestro servicio o realiza una consulta técnica</p>
+    
+    <div class="form-container">
+        <form method="POST" class="my-5">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            
+            <!-- Para nombre -->
+            <div class="form-group mb-3">
+                <label for="{{ form.customer_name.id_for_label }}" class="form-label">{{ form.customer_name.label_tag }}</label>
+                {{ form.customer_name }}
+                <div class="text-danger">
+                    {{ form.customer_name.errors }}
+                </div>
+            </div>
+
+            <!-- Para correo -->
+            <div class="form-group mb-3">
+                <label for="{{ form.customer_email.id_for_label }}" class="form-label">{{ form.customer_email.label_tag }}</label>
+                {{ form.customer_email }}
+                <div class="text-danger">
+                    {{ form.customer_email.errors }}
+                </div>
+            </div>
+            
+            <!-- Para mensaje -->
+            <div class="form-group mb-3">
+                <label for="{{ form.message.id_for_label }}" class="form-label">{{ form.message.label_tag }}</label>
+                {{ form.message }}
+                <div class="text-danger">
+                    {{ form.message.errors }}
+                </div>
+            </div>
+
+            <!-- Botón de enviar info -->
+            <div class="text-center my-3 pb-3">
+                <button type="submit" class="btn botonadj">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

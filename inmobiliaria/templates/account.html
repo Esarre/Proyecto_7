@@ -1,0 +1,126 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="container my-5 divcuenta col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="py-5 text-center">Mi cuenta</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center">
+                <h3 class="mb-5">Información personal registrada</h3>
+                <ul>
+                    <li>
+                        <p>Nombre de pila o alias: {{ usuario.username | title}}</p>
+                    </li>
+                    <li>
+                        <p>Rut: {{ usuario.rut | title}}</p>
+                    </li>
+                    <li>
+                        <p>Primer nombre: {{ usuario.primer_nombre | title}}</p>
+                    </li>
+                    <li>
+                        <p>Segundo nombre: {{ usuario.segundo_nombre | title}}</p>
+                    </li>
+                    <li>
+                        <p>Primer apellido: {{ usuario.apellido_paterno | title}}</p>
+                    </li>
+                    <li>
+                        <p>Segundo apellido: {{ usuario.apellido_materno | title}}</p>
+                    </li>
+                    <li>
+                        <p>Email: {{ usuario.email }}</p>
+                    </li>
+                    <li>
+                        <p>Fecha nacimiento: {{ usuario.fecha_nac }}</p>
+                    </li>
+                    <li>
+                        <p>Teléfono de contacto (+569): {{ usuario.telefono }}</p>
+                    </li>
+                    <li>
+                        <p>Tipo de usuario registrado: {{ usuario.tipo_usuario | title }}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center">
+                <h3 class="mb-5">Información modificable</h3>
+                <div> <!-- La clase form-control desajusta el formulario, no ocupar -->
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="update_info" value="1">
+                        {{ user_form.non_field_errors }}
+                        <div class="form-group mb-3">
+                            {{ user_form.username.label_tag }}
+                            {{ user_form.username }}
+                            {{ user_form.username.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.primer_nombre.label_tag }}
+                            {{ user_form.primer_nombre }}
+                            {{ user_form.primer_nombre.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.segundo_nombre.label_tag }}
+                            {{ user_form.segundo_nombre }}
+                            {{ user_form.segundo_nombre.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.apellido_paterno.label_tag }}
+                            {{ user_form.apellido_paterno }}
+                            {{ user_form.apellido_paterno.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.apellido_materno.label_tag }}
+                            {{ user_form.apellido_materno }}
+                            {{ user_form.apellido_materno.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.email.label_tag }}
+                            {{ user_form.email }}
+                            {{ user_form.email.errors }}
+                        </div>
+                        <div class="form-group mb-3">
+                            {{ user_form.telefono.label_tag }}
+                            {{ user_form.telefono }}
+                            {{ user_form.telefono.errors }}
+                        </div>
+                        <div class="my-3 pb-3">
+                            <button type="submit" class="btn botonadj">Actualizar información</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container col-sm-12 col-md-6">
+            <h3 class="text-center mt-5">Cambiar contraseña</h3>
+            <div> <!-- La clase form-control desajusta el formulario, no ocupar -->
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="change_password" value="1">
+                    {{ password_form.non_field_errors }}
+                    <div class="form-group mb-3">
+                        {{ password_form.old_password.label_tag }}
+                        {{ password_form.old_password }}
+                        {{ password_form.old_password.errors }}
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ password_form.new_password1.label_tag }}
+                        {{ password_form.new_password1 }}
+                        {{ password_form.new_password1.errors }}
+                    </div>
+                    <div class="form-group mb-3">
+                        {{ password_form.new_password2.label_tag }}
+                        {{ password_form.new_password2 }}
+                        {{ password_form.new_password2.errors }}
+                    </div>
+                    <div class="my-3 pb-3">
+                        <button type="submit" class="btn botonadj">Cambiar contraseña</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

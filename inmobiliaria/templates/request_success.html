@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+<div class="container text-center my-5 divadj pb-2 col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="container-fluid p-5">
+        <h1>¡Solicitud enviada satisfactoriamente, {{ user.get_username | title }}!</h1>
+    </div>
+    <h3>Dentro de los próximos días el propietrio del inmueble se contactará contigo para evaluar tu solicitud</h3>
+    <div class="text-center my-5">
+        <a class="btn botonadj my-3" href="{% url 'index' %}" role="button">Ir a Inicio</a>
+        <a class="btn botonadj my-3" href="{% url 'account' %}" role="button">Ir a Cuenta</a>
+        {% if user.tipo_usuario == 'arrendatario' %}
+            <a class="btn botonadj my-3" href="{% url 'request_management' %}" role="button">Ir a gestión de solicitudes</a>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

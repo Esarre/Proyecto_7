@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="container text-center my-5 divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="container-fluid p-5">
+        <h1>¡Bienvenid@, {{ user.get_username | title }}!</h1>
+    </div>
+    <h5>¿Qué deseas hacer?</h5>
+    <div class="text-center my-5">
+        <a class="btn botonadj my-3" href="{% url 'index' %}" role="button">Ir a Inicio</a>
+        <a class="btn botonadj my-3" href="{% url 'account' %}" role="button">Ir a Cuenta</a>
+        {% if user.tipo_usuario == 'arrendatario' %}
+            <a class="btn botonadj my-3" href="{% url 'request_management' %}" role="button">Ir a gestión de solicitudes</a>
+        {% endif %}
+        {% if user.tipo_usuario == 'arrendador' %}
+            <a class="btn botonadj my-3" href="{% url 'property_management' %}" role="button">Ir a gestión de inmuebles</a>
+            <a class="btn botonadj my-3" href="{% url 'property_request_management' %}" role="button">Ir a gestión de solicitudes</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

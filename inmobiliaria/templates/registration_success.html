@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+<div class="p-5 mx-auto text-center divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1 class="mb-5">¡Bienvenid@ a Dulce Hogar Chile!</h1>
+    <h3 class="mb-4">Si estás buscando arriendo este es tu sitio; puedes acceder a la información de inmuebles, buscar el que más te guste y solicitar arriendo al dueño.</h3>
+    <h3 class="mb-4">Si tienes un inmueble y lo quieres ofrecer en arriendo, ya puedes hacerlo !</h3>
+    <div>
+        <a class="btn botonadj" href="{% url 'login' %}" role="button">Iniciar Sesión</a>
+    </div>
+</div>
+
+{% endblock %}

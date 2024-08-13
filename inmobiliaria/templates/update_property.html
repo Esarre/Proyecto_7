@@ -1,0 +1,215 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+<div class="container my-5 divcuenta col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center">
+            <h1 class="pt-5 pb-3 text-center">Actualizar propiedad</h1>
+            <div class="form-container">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form_inmueble.non_field_errors }}
+                    
+                    <!-- Para nombre descriptivo -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.nombre.id_for_label }}" class="form-label">{{ form_inmueble.nombre.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.nombre }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.nombre.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para descripción -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.descripcion.id_for_label }}" class="form-label">{{ form_inmueble.descripcion.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.descripcion }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.descripcion.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para metros cuadrados construidos -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.m2_construidos.id_for_label }}" class="form-label">{{ form_inmueble.m2_construidos.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.m2_construidos }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.m2_construidos.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para metros cuadrados totales -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.m2_totales.id_for_label }}" class="form-label">{{ form_inmueble.m2_totales.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.m2_totales }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.m2_totales.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para número de habitaciones -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.n_habitaciones.id_for_label }}" class="form-label">{{ form_inmueble.n_habitaciones.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.n_habitaciones }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.n_habitaciones.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para número de baños -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.n_banios.id_for_label }}" class="form-label">{{ form_inmueble.n_banios.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.n_banios }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.n_banios.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para número de estacionamientos -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.n_estacionamientos.id_for_label }}" class="form-label">{{ form_inmueble.n_estacionamientos.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.n_estacionamientos }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.n_estacionamientos.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para precio -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.precio.id_for_label }}" class="form-label">{{ form_inmueble.precio.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.precio }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.precio.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para tipo de inmueble -->
+                    <div class="mb-3">
+                        <label for="{{ form_inmueble.tipo_inmueble.id_for_label }}" class="form-label">{{ form_inmueble.tipo_inmueble.label_tag }}</label>
+                        <div>
+                            {{ form_inmueble.tipo_inmueble }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_inmueble.tipo_inmueble.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para calle -->
+                    <div class="mb-3">
+                        <label for="{{ form_direccion.calle.id_for_label }}" class="form-label">{{ form_direccion.calle.label_tag }}</label>
+                        <div>
+                            {{ form_direccion.calle }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_direccion.calle.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para número de calle -->
+                    <div class="mb-3">
+                        <label for="{{ form_direccion.numero.id_for_label }}" class="form-label">{{ form_direccion.numero.label_tag }}</label>
+                        <div>
+                            {{ form_direccion.numero }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_direccion.numero.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para número de departamento (null=True) -->
+                    <div class="mb-3">
+                        <label for="{{ form_direccion.numero_departamento.id_for_label }}" class="form-label">{{ form_direccion.numero_departamento.label_tag }}</label>
+                        <div>
+                            {{ form_direccion.numero_departamento }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_direccion.numero_departamento.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para región -->
+                    <div class="mb-3">
+                        <label for="{{ form_direccion.region.id_for_label }}" class="form-label">{{ form_direccion.region.label_tag }}</label>
+                        <div>
+                            {{ form_direccion.region }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_direccion.region.errors }}
+                        </div>
+                    </div>
+
+                    <!-- Para comuna -->
+                    <div class="mb-3">
+                        <label for="{{ form_direccion.comuna.id_for_label }}" class="form-label">{{ form_direccion.comuna.label_tag }}</label>
+                        <div>
+                            {{ form_direccion.comuna }}   
+                        </div>
+                        <div class="text-danger">
+                            {{ form_direccion.comuna.errors }}
+                        </div>
+                    </div>
+
+                    <div class="my-5">
+                        <h5>Sube nuevas imágenes (opcional):</h5>
+                        <label for="id_imagenes">Imágenes:</label>
+                        <input type="file" name="imagenes" id="id_imagenes" multiple>
+                    </div>
+                    
+                    <div class="my-3 pb-3">
+                        <button type="submit" class="btn botonadj">Actualizar propiedad</button>
+                    </div>
+                    <div class="my-3 pb-3">
+                        <a class="btn botonadjborrar mb-3" href="{% url 'property_management' %}" role="button">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Mostrar imágenes ya cargadas -->
+        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center py-5 text-center">
+            <h3>Imágenes cargadas previamente:</h3>
+            <ul>
+                {% for imagen in imagenes %}
+                    <li>
+                        <img src="{{ imagen.imagen.url }}" alt="Imagen del inmueble" style="max-width: 200px;">
+                        <!-- Formulario para eliminar la imagen -->
+                        <form method="post" action="{% url 'delete_image' inmueble.id %}" class="d-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="imagen_id" value="{{ imagen.id }}">
+                            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        </form>
+                    </li>
+                {% empty %}
+                    <li>No hay imágenes cargadas.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Script para mostrar una confirmación al borrar una imagen -->
+<script>
+    document.querySelectorAll('form[action^="{% url "delete_image" inmueble.id %}"]').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        if (!confirm('¿Estás seguro de que deseas eliminar esta imagen?')) {
+            e.preventDefault();
+        }
+    });
+});
+</script>
+{% endblock %}

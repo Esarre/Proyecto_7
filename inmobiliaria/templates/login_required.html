@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+
+<div class="container p-5 text-center divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <h1>Acceso denegado</h1>
+    <p>Este contenido está disponible solo para los usuarios solicitantes de arriendo. Debes iniciar sesión o registrarte como usuario arrendatario para ver los detalles del inmueble.</p>
+    <a href="{% url 'login' %}" class="botonadj" role="button">Iniciar sesión</a> o 
+    <a href="{% url 'registration' %}" class="botonadj" role="button">Registrarse</a>
+</div>
+
+{% endblock %}
+

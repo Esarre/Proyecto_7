@@ -1,0 +1,67 @@
+[
+    {
+        "model": "inmobiliaria.direccion",
+        "pk": 1,
+        "fields": {
+            "calle": "Concón 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "fecha_creacion": "2024-07-25",
+            "inmueble": 1,
+            "region": 6,
+            "comuna": 47
+        }
+    },
+    {
+        "model": "inmobiliaria.direccion",
+        "pk": 2,
+        "fields": {
+            "calle": "Viña del mar 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "fecha_creacion": "2024-07-25",
+            "inmueble": 2,
+            "region": 6,
+            "comuna": 51
+        }
+    },
+    {
+        "model": "inmobiliaria.direccion",
+        "pk": 3,
+        "fields": {
+            "calle": "valparaíso 1",
+            "numero": "123",
+            "numero_departamento": "NA",
+            "fecha_creacion": "2024-07-25",
+            "inmueble": 3,
+            "region": 6,
+            "comuna": 45
+        }
+    },
+    {
+        "model": "inmobiliaria.direccion",
+        "pk": 4,
+        "fields": {
+            "calle": "Quilpué 1",
+            "numero": "123",
+            "numero_departamento": "101A",
+            "fecha_creacion": "2024-07-25",
+            "inmueble": 4,
+            "region": 6,
+            "comuna": 79
+        }
+    },
+    {
+        "model": "inmobiliaria.direccion",
+        "pk": 5,
+        "fields": {
+            "calle": "Viña del mar 2",
+            "numero": "456",
+            "numero_departamento": "201A",
+            "fecha_creacion": "2024-07-25",
+            "inmueble": 5,
+            "region": 6,
+            "comuna": 51
+        }
+    }
+]

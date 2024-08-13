@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<div class="container text-center my-5 divadj col-xl-8 col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="container">
+        <h1 class="text-center py-5">Sesión Cerrada con Éxito</h1>
+        <p class="text-center" style="font-size: 1.2rem; text-align: center; text-justify: inter-word;">¡Gracias por visitarnos!</p>
+        <p class="text-center" style="font-size: 1.2rem; text-align: center; text-justify: inter-word;">Puedes volver al inicio o volver a iniciar sesión</p>
+        <div class="text-center my-5">
+            <a class="btn botonadj mx-2 mb-3" href="{% url 'index' %}" role="button">Ir al Inicio</a>
+            <a class="btn botonadj mx-2 mb-3" href="{% url 'login' %}" role="button">Iniciar Sesión</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+<div class="container my-5 col-10">
+    <!-- Formulario de búsqueda -->
+    <div>
+        <h5 class="letratitulo">Busca viviendas por región y/o comuna:</h5>
+        <form method="get" class="mb-4">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="region">Región</label>
+                    <select id="region" name="region" class="form-control">
+                        <option value="">Seleccionar Región</option>
+                        {% for region in regiones %}
+                            <option value="{{ region.id }}" {% if request.GET.region == region.id|stringformat:"s" %}selected{% endif %}>{{ region.region }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" name="comuna" class="form-control">
+                        <option value="">Seleccionar Comuna</option>
+                        {% for comuna in comunas %}
+                            <option value="{{ comuna.id }}" {% if request.GET.comuna == comuna.id|stringformat:"s" %}selected{% endif %}>{{ comuna.comuna }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group col-md-4 d-flex align-items-end mt-3">
+                    <button type="submit" class="btn botonadj">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row divadj">
+        <h1 class="mt-5 mb-5 text-center letratitulo">Viviendas Disponibles en nuestra plataforma</h1>
+        {% for inmueble in inmuebles %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    {% if inmueble.imagenes.first %}
+                        <img src="{{ inmueble.imagenes.first.imagen.url }}" class="card-img-top img-fluid card-img-fixed" alt="Imagen del inmueble">
+                    {% else %}
+                        <img src="https://via.placeholder.com/150" class="card-img-top img-fluid card-img-fixed" alt="Imagen del inmueble">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ inmueble.nombre }}</h5>
+                        <p class="card-text">{{ inmueble.descripcion }}</p>
+                        <p class="card-text">Precio: {{ inmueble.precio }}</p>
+                        <p class="card-text">Ubicación: {{ inmueble.direccion }}</p>
+                        <a href="{% url 'property_details' inmueble.id %}" class="btn botonadj">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p>No hay viviendas disponibles en este momento.</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Script para link de JQuery. Si bien está cargado en base.html, el problema es que el script siempre quedará por debajo el script que utiliza a JQuery (el que está abajo antes del 'endblock') por lo que sería un problema en el orden de carga. Dejé igualmente el link en base.html simplemente por respetar el formato, pero si no lo agrego en este punto del código no se ejecutará el código que utiliza JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<!-- Script JQuery para mostrar las comunas pertenecientes a una región, cuando el usuario decide seleccionar una región -->
+<script>
+$(document).ready(function() {
+    $('#region').change(function() {
+        var regionId = $(this).val();
+        var comunaSelect = $('#comuna');
+        comunaSelect.empty(); // Limpia las opciones actuales
+        comunaSelect.append('<option value="">Seleccionar Comuna</option>'); // Agrega la opción predeterminada
+
+        if (regionId) {
+            $.ajax({
+                url: '{% url "obtener_comunas" %}',
+                data: {
+                    'region_id': regionId
+                },
+                success: function(data) {
+                    // Asegúrate de que data es un array y recorre cada elemento
+                    $.each(data, function(index, comuna) {
+                        comunaSelect.append('<option value="' + comuna.id + '">' + comuna.comuna + '</option>');
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error al cargar las comunas: ", error);
+                }
+            });
+        }
+    });
+});
+</script>
+
+{% endblock %}
